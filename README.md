@@ -16,4 +16,22 @@ These datasets can be obtained as follows:
 
 ## 2. Results on these four datasets
 
-<img src="https://github.com/chenxlin222/ETEU/blob/main/figs/UAV123/precision_OPE.png" width="375px"> <img src="https://github.com/chenxlin222/ETEU/blob/main/figs/UAV123/success_OPE.png" width="375px">
+<img src="https://github.com/chenxlin222/DynamicTrack/blob/main/results/results.png" width="375px"> <img src="https://github.com/chenxlin222/ETEU/blob/main/figs/UAV123/success_OPE.png" width="375px">
+
+## 3. Running instructions
+
+DynamicTrack is implemented purely based on the PyTorch.
+
+### Install the environment 
+
+bash install_pytorch17.sh
+
+### Data Preparation
+
+put the tracking datasets (UAV123, GOT10K, LaSOT, and TrackingNet) in ./data.
+
+### Set paths
+
+Run the following command to set paths for this project
+
+python tracking/create_default_local_file.py --workspace_dir . --data_dir ./data --save_dir .
