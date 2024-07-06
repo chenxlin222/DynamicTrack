@@ -24,7 +24,7 @@ DynamicTrack is implemented purely based on the PyTorch.
 
 ### Install the environment 
 
-bash install_pytorch17.sh
+    bash install_pytorch17.sh
 
 ### Data Preparation
 
@@ -32,6 +32,10 @@ put the tracking datasets (UAV123, GOT10K, LaSOT, and TrackingNet) in ./data.
 
 ### Set paths
 
-Run the following command to set paths for this project
+Run the following command to set paths for this project:
 
-python tracking/create_default_local_file.py --workspace_dir . --data_dir ./data --save_dir .
+    python tracking/create_default_local_file.py --workspace_dir . --data_dir ./data --save_dir .
+
+### Train DynamicTrack
+
+    python tracking/train.py --script dynamictrack --config baseline --save_dir . --mode multiple --nproc_per_node 8
