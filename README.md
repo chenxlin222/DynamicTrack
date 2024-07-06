@@ -16,7 +16,7 @@ These datasets can be obtained as follows:
 
 ## 2. Results on these four datasets
 
-<img src="https://github.com/chenxlin222/DynamicTrack/blob/main/results/results.png" width="375px"> <img src="https://github.com/chenxlin222/ETEU/blob/main/figs/UAV123/success_OPE.png" width="375px">
+<img src="https://github.com/chenxlin222/DynamicTrack/blob/main/results/results.png" width="375px"> 
 
 ## 3. Running instructions
 
