@@ -36,13 +36,4 @@ Run the following command to set paths for this project:
 
     python tracking/create_default_local_file.py --workspace_dir . --data_dir ./data --save_dir .
 
-### Train DynamicTrack
 
-    python tracking/train.py --script dynamictrack --config baseline --save_dir . --mode multiple --nproc_per_node 8
-
-### Test and evaluate DynamicTrack
-
-Lasot for example:
-
-    python tracking/test.py dynamictrack baseline --dataset lasot --threads 32
-    python tracking/analysis_results.py # need to modify tracker configs and names
