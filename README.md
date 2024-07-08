@@ -36,4 +36,11 @@ Run the following command to set paths for this project:
 
     python tracking/create_default_local_file.py --workspace_dir . --data_dir ./data --save_dir .
 
+### Training
+
+The training for the proposed DynamicTrack consists of two steps: The first step is to train the cascaded backbone, the encoder-decoder Transformer and the prediction head. The second step is to train the adaptive router.
+
+#### The first step
+
+The following parts need to be changed:(1)
 
