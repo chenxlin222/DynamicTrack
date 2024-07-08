@@ -8,7 +8,7 @@ def parse_args():
     """
     parser = argparse.ArgumentParser(description='Parse args for training')
     # for train
-    parser.add_argument('--script', type=str, default='stark_s', help='training script name')
+    parser.add_argument('--script', type=str, default='dynamictrack', help='training script name')
     parser.add_argument('--config', type=str, default='baseline', help='yaml configure file name')
     parser.add_argument('--save_dir', type=str, default='.', help='root directory to save checkpoints, logs, and tensorboard')
     parser.add_argument('--mode', type=str, choices=["single", "multiple"], default="multiple",
