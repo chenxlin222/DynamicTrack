@@ -40,7 +40,9 @@ Run the following command to set paths for this project:
 
 The training for the proposed DynamicTrack consists of two steps: The first step is to train the cascaded backbone, the encoder-decoder Transformer and the prediction head. The second step is to train the adaptive router.
 
-#### The first step
+#### (1) The first step
 
-The following parts need to be changed:(1)
+The following parts need to be changed:
+
+① the codes of step 1 in "tracker_code/lib/models/stark/stark_s.py" should be used, and the codes of step 2 in "tracker_code/lib/models/stark/stark_s.py" should be removed.
 
