@@ -45,6 +45,7 @@ The training for the proposed DynamicTrack consists of two steps: The first step
     python tracking/train.py --script dynamictrack --config baseline --save_dir . --mode multiple --nproc_per_node 8
 
 #### (2) The second step
+
 When starting the second step, the following files need to be modified: 
 
 ① The line 71 in "tracker_code/lib/train/run_training.py" should be changed to "expr_module = importlib.import_module('lib.train.train_script_step2')"
@@ -52,5 +53,6 @@ When starting the second step, the following files need to be modified:
 ③ "tracker_code/lib/train/actors/stark_s.py" should changed to the codes for step2.
 
 Then, run the following:
+    
     python tracking/train.py --script dynamictrack --config baseline_step2 --save_dir . --mode multiple --nproc_per_node 8
 
